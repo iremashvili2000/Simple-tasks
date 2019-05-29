@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
-double Plus(double a, double b){
+double Plus(double a, double b) {
 	return a + b;
 }
 double multiply(double a, double b) {
@@ -11,7 +11,7 @@ double Divide(double a, double b) {
 	return a / b;
 
 }
-double Substraction(double a, double b) {
+double Subtraction(double a, double b) {
 	return a - b;
 }
 
@@ -21,12 +21,12 @@ int main() {
 	double a, b, d = 0;
 	char c;
 	cout << " If you want to stop press the button-‘e’ after you write a sign" << endl;
-  cout <<" Please dont write it as a string " <<endl;
+	cout << " Please dont write it as a string " << endl;
 	cin >> a;
 
 	while (true) {
-		
-		
+
+
 
 		cin >> c;
 		if (c == 'e') {
@@ -39,7 +39,7 @@ int main() {
 				a = Plus(a, b);
 				cout << a << endl;
 			}
-			else if(c=='*'){
+			else if (c == '*') {
 				cin >> b;
 				a = multiply(a, b);
 				cout << a << endl;
@@ -57,7 +57,7 @@ int main() {
 			}
 			else if (c == '-') {
 				cin >> b;
-				a = Substraction(a, b);
+				a = Subtraction(a, b);
 				cout << a << endl;
 
 			}
@@ -70,7 +70,7 @@ int main() {
 
 	}
 
-	
+
 	system("pause");
 
 }
