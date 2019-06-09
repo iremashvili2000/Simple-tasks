@@ -1,25 +1,36 @@
 #include <iostream>
 #include <string>
 using namespace std;
+// programa aris oop tematikis,igi poulobs sami adamianidan udidesi wlovanebis mqones da yvelaze meti fulis mqone adamians
+// da bechdavs
 class func {
 	string  name, surname, id;
 	double fuli;
 	int age;
 public:
 	func() { }
+	
 	~func(){ }
+	
 	void input();
+	
 	void printmayuta();
+	
 	void ufrosiasakis();
+	
 	int getage() {
 		return age;
 	}
 	double getfuli() {
 		return fuli;
 	}
+	
 };
+	
 func fuliani(func&, func&, func&);
+	
 func didi(func&, func&, func&);
+	
 void func::input() {
 	static int counter = 1;
 	cout << "name: "<<counter<<": "; cin >> name;
@@ -29,18 +40,21 @@ void func::input() {
 	cout << "age: "; cin >> age;
 	counter++;
 }
+	
 void func::printmayuta() {
 	cout << "yvelaze fuliani tipi: " << name << " " << surname << endl;
 	cout << " misi idi: " << id << endl << "age: " << age << endl;
 	cout << "fulis raodenoba: " << fuli;
 	cout << endl;
 }
+	
 void func::ufrosiasakis() {
 	cout << "yvelaze didi asakis adamiani: " << name << " " << surname << endl;
 	cout << " misi idi: " << id << endl << "age: " << age << endl;
 	cout << "fulis raodenoba: " << fuli;
 	cout << endl;
 }
+	
 func fuliani(func& a, func& b, func& c) {
 	func*t;
 	if (a.getfuli() > b.getfuli())t = &a;
@@ -48,6 +62,7 @@ func fuliani(func& a, func& b, func& c) {
 	if (c.getfuli() > t->getfuli())t = &c;
 	return * t;
 }
+	
 func didi(func& a, func& b, func& c) {
 	func *t;
 	if (a.getage() > b.getage())t = &a;
@@ -55,6 +70,7 @@ func didi(func& a, func& b, func& c) {
 	if (c.getage() > t->getage())t = &c;
 	return *t;
 }
+	
 int main() 
 {
 	func A, B, C;
