@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 using namespace std;
-// programa gaxlavt oop tematikis programa poulobs sam adamians shoris yvelaze didi asakis mqones da yvelaze fulians :D 
 class func {
 	string  name, surname, id;
 	double fuli;
@@ -10,8 +9,6 @@ public:
 	func() { }
 	~func(){ }
 	void input();
-	
-	
 	void printmayuta();
 	void ufrosiasakis();
 	int getage() {
@@ -20,8 +17,6 @@ public:
 	double getfuli() {
 		return fuli;
 	}
-		
-
 };
 func fuliani(func&, func&, func&);
 func didi(func&, func&, func&);
@@ -45,10 +40,7 @@ void func::ufrosiasakis() {
 	cout << " misi idi: " << id << endl << "age: " << age << endl;
 	cout << "fulis raodenoba: " << fuli;
 	cout << endl;
-
 }
-//func::func() { }
-//func::~func(){ }
 func fuliani(func& a, func& b, func& c) {
 	func*t;
 	if (a.getfuli() > b.getfuli())t = &a;
@@ -62,7 +54,6 @@ func didi(func& a, func& b, func& c) {
 	else t = &b;
 	if (c.getage() > t->getage())t = &c;
 	return *t;
-
 }
 int main() 
 {
