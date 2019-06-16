@@ -3,6 +3,7 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
+// amocana poulobs mashvshi sasurvel ricxvs sasurvel intervalshi tu ratqmaunda aseti arsebobs
 int search(vector <int> a, int n, int p, int end) {
 	
 	for (int i = p; i < end; i++) {
