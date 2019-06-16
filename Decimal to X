@@ -4,8 +4,9 @@ using namespace std;
 int main() {
 	vector <int>v;
 	long long a, b, c, d;
-	
+	cout << "meramdenobitshi gvinda gadavides: ";
 	cin >> d;
+	cout << "sheiyvanet gadasayvani ricxvi: ";
 	cin >> a;
 
 	while (a > 0) {
