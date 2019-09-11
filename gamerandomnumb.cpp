@@ -9,7 +9,7 @@ using namespace std;
 // goga iremashvili
 int main()
 {
-	int iSecret,numb;
+	int iSecret, numb;
 	int counts = 0;
 
 	srand(time(NULL));
@@ -18,10 +18,18 @@ int main()
 
 	while (true) {
 		cout << "shemoitanet tqveni ricxvi,tu tamashidan gasvla gindat akrife 101: ";
-		cin >> numb;
-		if (numb == 101) { 
+		try {
+			cin >> numb;
+			throw string("samwuxarod tqven sheiyvanet string tipis monacemi:(");
+		}
+		catch (string numb) {
+			cout << "\n**" << numb << " ***" << endl;
+			break;
+		}
+		if (numb == 101) {
 			cout << "naxvamdis!" << endl;
-			break; }
+			break;
+		}
 		if (numb > 101 & numb < 1) {
 			cout << "shegeshala monakveti";
 			continue;
@@ -37,7 +45,7 @@ int main()
 				break;
 
 			}
-			
+
 		}
 
 
