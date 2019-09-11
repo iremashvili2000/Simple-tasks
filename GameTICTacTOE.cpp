@@ -114,7 +114,6 @@ void Win() {
 }
 int main() {
 	cout << "x ik 0 ikis magivrad chven aq vwert 1 da 0 ians" << endl;
-	cout << "romel ujrashic gindat chaiweros im ujris nomeri chaweret!" << endl;
 	Draw();
 	while (true) {
 
